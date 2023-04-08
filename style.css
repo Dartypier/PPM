@@ -17,42 +17,42 @@
     font-family: "Playfair Display", serif;
 }
 
-.menu-button-first{
+.menu-button-first {
     font-size: 15px;
-    color:#222;
+    color: #222;
 }
 
-.menu-button-second{
+.menu-button-second {
     font-size: 13px;
-    color:#fff;
+    color: #fff;
 }
 
-#navbar-toggler-first{
+#navbar-toggler-first {
     border: 0;
     outline: 0;
     background-color: #fff;
     box-shadow: none;
 }
 
-#navbar-toggler-second{
+#navbar-toggler-second {
     border: 0;
     outline: 0;
     background-color: #222;
     box-shadow: none;
 }
 
-.nav-first .nav-link{
-    color:#222;
+.nav-first .nav-link {
+    color: #222;
     font-size: 15px;
     padding: 20px 20px !important;
 }
 
-.nav-first .nav-link:hover{
+.nav-first .nav-link:hover {
     background-color: #3f3f3f;
     color: white;
 }
 
-.nav-second .nav-link{
+.nav-second .nav-link {
     color: #fff;
     font-size: 13px;
     font-weight: 400;
@@ -65,9 +65,13 @@
     color: #fff;
 }
 
-.dropdown-menu-dark {
+.nav-first .dropdown-menu-dark {
     background-color: #3f3f3f;
     border-radius: 0;
+}
+
+.nav-first .dropdown-menu-dark a:focus {
+    background-color: #3f3f3f !important;
 }
 
 .head-text h1 {
@@ -80,6 +84,10 @@
 
 #hero {
     background-image: url("assets/img/nhgazette-hero.jpg");
+}
+
+header #hero h1 {
+    font-size: 30px;
 }
 
 button a {
@@ -120,6 +128,23 @@ button:hover {
     height: 20px;
 }
 
+.articles h1 {
+    font-size: 25px;
+}
+
+.latest-paper h1 {
+    font-size: 25px;
+}
+
+.promo-video h1 {
+    font-size: 30px;
+}
+
+.promo-video p,
+.political-cartoons p {
+    font-size: 22px;
+}
+
 .info-section {
     background-image: linear-gradient(0deg, rgba(34, 34, 34, 0.69), rgba(34, 34, 34, 0.69)), url("assets/img/nh-gazette-video-callout.jpg");
     color: #fff;
@@ -131,6 +156,23 @@ button:hover {
     background-color: #222;
     color: #fff;
     font-size: 22px;
+}
+
+.political-cartoons h3 {
+    font-size: 22px;
+}
+
+.political-cartoons h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.guide-articles #info-guide {
+    font-size: 20px;
+}
+
+.guide-articles article h1 {
+    font-size: 25px;
 }
 
 .carousel .carousel-indicators button {
@@ -160,9 +202,12 @@ footer ul {
     list-style: none;
 }
 
+footer h2 {
+    font-size: 25px;
+}
+
 main {
-    margin-bottom: 10rem;
-    ;
+    margin-bottom: 10rem;;
 }
 
 .widget-footer {
@@ -191,8 +236,7 @@ footer {
 .close-button {
     height: 62.5px;
     width: 60px;
-    background-color: #3f3f3f;
-    ;
+    background-color: #3f3f3f;;
     border: 0;
     color: #fff;
     font-size: 20px;
@@ -223,4 +267,3 @@ a:focus {
 .info-section a {
     color: #fff;
 }
-

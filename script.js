@@ -28,3 +28,5 @@ function openSearch() {
     document.querySelector('.search-form').classList.remove('d-none');
     document.querySelector('.search-form').classList.add('d-flex');
 }
+
+//scroll-to-top
