@@ -207,7 +207,8 @@ footer h2 {
 }
 
 main {
-    margin-bottom: 10rem;;
+    margin-bottom: 10rem;
+    ;
 }
 
 .widget-footer {
@@ -236,7 +237,8 @@ footer {
 .close-button {
     height: 62.5px;
     width: 60px;
-    background-color: #3f3f3f;;
+    background-color: #3f3f3f;
+    ;
     border: 0;
     color: #fff;
     font-size: 20px;
@@ -266,4 +268,25 @@ a:focus {
 
 .info-section a {
     color: #fff;
+}
+
+#scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #616161;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 9999;
+    border: none;
+    box-shadow: 0 0 3px #474747;
+    padding: 0;
 }

@@ -6,13 +6,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet">
     <link rel='stylesheet' id='generate-fonts-css'
-          href='//fonts.googleapis.com/css?family=Playfair+Display:regular,italic,700,700italic,900,900italic'
-          type='text/css' media='all'/>
+        href='//fonts.googleapis.com/css?family=Playfair+Display:regular,italic,700,700italic,900,900italic'
+        type='text/css' media='all' />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
@@ -21,495 +21,497 @@
 </head>
 
 <body id="custom">
-<!-- Main -->
-<!-- NAV -->
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="d-none search-form form-inline">
-            <input class="search-input" type="search"/>
-            <input class="close-button" type="reset" value="x" alt="Clear the search form" onclick="closeSearch()">
+    <!-- Main -->
+    <!-- NAV -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="d-none search-form form-inline">
+                <input class="search-input" type="search" />
+                <input class="close-button" type="reset" value="x" alt="Clear the search form" onclick="closeSearch()">
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid">
-    <div class="row">
-        <nav class="nav-first navbar navbar-expand-md mb-3 p-0 m-0">
-            <div class="container-xxl">
-                <!-- button for mobile nav -->
-                <button id="navbar-toggler-first" class="navbar-toggler " type="button" data-bs-toggle="collapse"
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="nav-first navbar navbar-expand-md mb-3 p-0 m-0">
+                <div class="container-xxl">
+                    <!-- button for mobile nav -->
+                    <button id="navbar-toggler-first" class="navbar-toggler " type="button" data-bs-toggle="collapse"
                         data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
                         aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="menu-button-first">Menu</span>
-                </button>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="menu-button-first">Menu</span>
+                    </button>
 
-                <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
+                    <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
 
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe/Donate</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About the Gazette</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Masterhead</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Project</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                The Bush/Nazi
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">The Bush/Nazi Stories</a></li>
-                                <li><a class="dropdown-item" href="#">Bush/Nazi Link Confirmed</a></li>
-                                <li><a class="dropdown-item" href="#">Bush/Nazi Link Continued</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a id="navbar-search-icon-md" class="nav-link d-none d-md-block" href="#"
-                               onclick="openSearch()"><i class="bi bi-search"></i></a>
-                        </li>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Subscribe/Donate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About the Gazette</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Masterhead</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Project</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    The Bush/Nazi
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">The Bush/Nazi Stories</a></li>
+                                    <li><a class="dropdown-item" href="#">Bush/Nazi Link Confirmed</a></li>
+                                    <li><a class="dropdown-item" href="#">Bush/Nazi Link Continued</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a id="navbar-search-icon-md" class="nav-link d-none d-md-block" href="#"
+                                    onclick="openSearch()"><i class="bi bi-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a id="navbar-search-icon-sm" class="nav-link d-md-none d-inline justify-content-end collapsed"
+                        href="#" onclick="openSearch()"><i class="bi bi-search"></i></a>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid mb-4">
+        <div class="head-text row align-content-center">
+            <div class="col-md text-center d-md-none">
+                <h1 class="fw-bold">
+                    The New Hampshire Gazette
+                </h1>
+                <h2 class="text-secondary"> The Nation’s Oldest Newspaper™ • Editor: Steven Fowle •
+                    Founded 1756 by Daniel Fowle
+                </h2>
+            </div>
+            <div class="col text-center d-none d-md-block">
+                <h1 class="fw-bold">
+                    The New Hampshire Gazette
+                </h1>
+                <h2 class="text-secondary"> The Nation’s Oldest Newspaper™ • Editor: Steven Fowle •
+                    Founded 1756 by Daniel Fowle
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav-second navbar navbar-expand-lg navbar-dark bg-dark styled-font justify-content-center m-0 p-0">
+        <button id="navbar-toggler-second" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#second-nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="menu-button-second">Departments</span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="second-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">The Fortnightly Rant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">The Alleged News®</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mash Notes, Hate Mail & Other Correspondence</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">The Northcountry Chronicle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Page 8</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header>
+        <div id="hero" class="container-fluid p-5 mb-0">
+            <div class="row justify-content-center">
+                <div class="col justify-content-center text-center">
+                    <h3>The Nation’s Oldest Newspaper.</h3>
+                    <h1 class="fw-bold">A svelte, one-ounce packet<br>of unfettered, non-fiction news.</h1>
+                    <p>Published 26 times a year on alternating Fridays.<br>
+                        Distributed for free by people just like you.<br>
+                        Help us cover the first district, the second and beyond. </p>
+                    <button><a href="#">Learn More</a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="hr-end mt-0">
+
+    </header>
+
+    <main>
+        <section class="articles">
+
+            <div class="container p-5 mx-auto gy-4">
+                <div class="row my-4">
+                    <div class="col text-center">
+                        <h2>Read the Latest Paper Online<br>–=≈=–</h2>
+                    </div>
+                </div>
+
+                <div class="row mb-4 gy-4">
+                    <div class="col-lg-8">
+                        <article>
+                            <h1><a href="#">Justice Deferred? Or Defunct?</a></h1>
+                            <img class="mx-auto d-block img-fluid" src="assets/img/Waiting-for-Garland-655x465.jpg"
+                                alt="Justice Deferred? Or Defunct article image">
+                            <p>
+                                Watching Vladimir and Estragon on a nearly bare stage as they wait for Godot can,
+                                paradoxically,
+                                be a thrilling experience. Waiting for Merrick Garland to slap the cuffs on The Former
+                                Guy,
+                                on
+                                the other hand, is beginning to get tedious. Talk about pent-up demand. If Ticketmaster
+                                could
+                                sell seats to a DJT Perp Walk, its ensuing collapse would make last year’s Taylor Swift
+                                fiasco
+                                look like business as usual. And yet, we wait…and wait…. What—a seething nation might
+                                ask,
+                                boiling over in exasperation, had…
+
+                            </p>
+                            <button><a href="#">Read More</a></button>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 mx-auto">
+                        <article>
+                            <h1><a href="#">A Brief Dispatch Regarding the Impending Coronation</a></h1>
+                            <img class="img-fluid mx-auto d-block" src="assets/img/Black-History-275x202.jpg"
+                                alt="A Brief Dispatch Regarding the Impending Coronation article image">
+                            <p>
+                                The U.S. and the U.K., said George Bernard Shaw, are two nations separated by a common
+                                language.
+                                Further distinguishing us from our former colonial master is our form of
+                                government—though
+                                GOP
+                                opposition to monarchy seems increasingly squishy. Our editorial position on monarchy
+                                was
+                                most
+                                recently published on February 10th, with a selection from Thomas Paine’s, Common Sense;
+                                herewith, a more succinct version: Britain’s first king was “nothing better than the
+                                principal
+                                ruffian of some restless…
+                            </p>
+                            <button><a href="#">Read More</a></button>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-md mx-auto">
+                        <article>
+                            <h1><a href="#">Snowflake Culture</a></h1>
+                            <p>by W.D. Ehrhart I have been writing poetry ever since I was 15 years old. My first
+                                published
+                                work
+                                appeared in 1971 when I was 22 years old. Since then, I’ve published over 400 poems.
+                                Along
+                                the
+                                way, I’ve probably received as many as 4,000…</p>
+                            <button><a href="#">Read More</a></button>
+                        </article>
+                    </div>
+                    <div class="col-md mx-auto">
+                        <article>
+                            <h1><a href="#">Merrimack Station: A Fifty Year N.H. Disaster Continues</a></h1>
+                            <p>Lby Roy Morrison Merrimack Station, the coal fired power plant on the banks of the
+                                Merrimack
+                                River in Bow, New Hampshire, has recently passed its fiftieth anniversary. It’s New
+                                England’s
+                                last remaining coal plant. It’s also N.H.’s largest point source of carbon pollution.
+                                The
+                                plant…
+                            </p>
+                            <button><a href="#">Read More</a></button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest-paper">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center my-3">
+                        <h2>Download the Latest Paper<br>–=≈=–</h2>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col">
+                        <h1 class="text-center"><a href="#">Volume 267, No. 14; March 24, 2023</a></h1>
+                        <p class="text-center">March 24, 2023 — To download this issue of our paper, just click on the
+                            image.</p>
+                        <a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/267_14.png"
+                                alt="article image of volume 267"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="promo-video">
+
+            <div class="container-fluid info-section text-center">
+                <h1>Politics on paper since October 7, 1756</h1>
+                <p>A newspaper, a third cousin five times removed,
+                    a freelance insurgency. <a href="#">Watch the video</a></p>
+            </div>
+        </section>
+
+        <section class="political-cartoons">
+
+            <div class="container text-center my-5">
+                <h3 class="mb-3">Political Cartoons.</h3>
+                <h1 class="mb-3">Mike Dater's Corner</h1>
+                <p class="mb-3">The New Hampshire Gazette’s resident starving artist. Over 20 years of political satire,
+                    some
+                    whimsical and some occasionally irreverent.</p>
+                <button class="mb-3"><a href="#">Visit the Gallery</a></button>
+                <img class="img-fluid mx-auto d-block" src="assets/img/mike-dater-frankenmitch.jpg"
+                    alt="mike art political cartoon">
+            </div>
+        </section>
+
+        <section class="guide-articles">
+            <div id="main-quote" class="container-fluid text-center p-5">
+                <div class="container">
+                    <div class="row text-center">
+                        <p>“Thanks again, as always, for making the now really bad news somewhat easier to tolerate. The
+                            truth,
+                            which is now seldom spoken, and never spoken by our nation’s “Liar in Chief,” just keeps
+                            getting
+                            worse and worse. I am thankful for our still (for now, anyway) free press and late night
+                            television
+                            comedians’ rants posted on Youtube about the state of our country.”</p>
+                        <p class="mb-0">— E.S., Dover, N.H.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5 mb-3">
+                <div class="row text-center">
+                    <h2 class="mb-3">Admiral Fowle’s Piscataqua River Tidal Guide (Not for Navigational Purposes)</h2>
+                    <p id="info-guide">Portsmouth, arguably the first town in this country not founded by religious
+                        extremists, is
+                        bounded
+                        on the north and east by the Piscataqua River, the second, third, or fourth fastest-flowing
+                        navigable river in the country… <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <div id="article-carousel" class="carousel slide" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row gy-5">
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 1</h1>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, omnis.
+                                            Repellat,
+                                            saepe quas repellendus ullam quam accusamus illo perferendis beatae porro
+                                            quibusdam,
+                                            delectus nisi, unde iure minus et eius iusto.</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 2</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis obcaecati ut
+                                            ipsa cum
+                                            praesentium provident, dolores tempore nihil, enim iure nam pariatur, autem
+                                            officia
+                                            itaque. Voluptatem perspiciatis corporis laboriosam necessitatibus?</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 3</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga amet nostrum,
+                                            tempore
+                                            reiciendis assumenda ullam, porro iure fugit cupiditate deserunt nihil
+                                            molestias
+                                            repellendus labore pariatur? Sit deserunt blanditiis et? Exercitationem.</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row gy-5">
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 4</h1>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus dolor iusto
+                                            fugit
+                                            dolores. Sit perferendis numquam, atque praesentium autem quidem nesciunt
+                                            eveniet
+                                            ullam quos, alias iusto quaerat et, voluptas ad?</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 5</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci
+                                            minima cum
+                                            praesentium obcaecati ullam. Voluptatem, eius. Tempora fuga, praesentium
+                                            aperiam
+                                            optio iure ipsum sunt rem iste ducimus, sint quo.</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 6</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere
+                                            distinctio,
+                                            perspiciatis ipsa dicta vel a eaque cumque pariatur deleniti molestias
+                                            possimus,
+                                            consequuntur laboriosam obcaecati quam facilis nesciunt. Fuga, numquam!</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row gy-5">
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 7</h1>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi qui
+                                            perspiciatis,
+                                            explicabo non iusto nesciunt dolorum necessitatibus cumque illum praesentium
+                                            repellat soluta aut id. Quod deserunt explicabo quasi nostrum accusamus.</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 8</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo sint
+                                            mollitia
+                                            amet blanditiis exercitationem aut ipsa reprehenderit nulla ratione, laborum
+                                            culpa
+                                            quidem. Harum nobis minus officiis consequuntur voluptate a!</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <h1>Article 9</h1>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
+                                            voluptas sequi
+                                            vitae praesentium, eius, repudiandae, odio vel doloremque perspiciatis fugit
+                                            facilis. Dolor at ex doloremque cumque architecto sunt error pariatur.</p>
+                                        <button><a href="#">Read More</a></button>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#article-carousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#article-carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#article-carousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="container-fluid widget-footer mb-0"></div>
+    <footer class="footer">
+
+
+        <div class="container align-content-center justify-content-center">
+            <div class="row justify-content-start gy-3">
+                <div class="col-md-6 col-lg-4">
+                    <h2>Contributors</h2>
+                    <ul>
+                        <li><a href="#">Mike Dater</a></li>
+                        <li><a href="#">W.D. Ehrhart</a></li>
+                        <li><a href="#">Jim Hightower</a></li>
+                        <li><a href="#">Jean Stimmell</a></li>
                     </ul>
                 </div>
-                <a id="navbar-search-icon-sm" class="nav-link d-md-none d-inline justify-content-end collapsed"
-                   href="#" onclick="openSearch()"><i class="bi bi-search"></i></a>
-            </div>
-        </nav>
-
-    </div>
-</div>
-
-
-<div class="container-fluid mb-4">
-    <div class="head-text row align-content-center">
-        <div class="col-md text-center d-md-none">
-            <h1 class="fw-bold">
-                The New Hampshire Gazette
-            </h1>
-            <h2 class="text-secondary"> The Nation’s Oldest Newspaper™ • Editor: Steven Fowle •
-                Founded 1756 by Daniel Fowle
-            </h2>
-        </div>
-        <div class="col text-center d-none d-md-block">
-            <h1 class="fw-bold">
-                The New Hampshire Gazette
-            </h1>
-            <h2 class="text-secondary"> The Nation’s Oldest Newspaper™ • Editor: Steven Fowle •
-                Founded 1756 by Daniel Fowle
-            </h2>
-        </div>
-    </div>
-</div>
-
-<nav class="nav-second navbar navbar-expand-lg navbar-dark bg-dark styled-font justify-content-center m-0 p-0">
-    <button id="navbar-toggler-second" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#second-nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="menu-button-second">Departments</span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="second-nav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">The Fortnightly Rant</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">The Alleged News®</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Mash Notes, Hate Mail & Other Correspondence</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">The Northcountry Chronicle</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">Page 8</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-
-<header>
-    <div id="hero" class="container-fluid p-5 mb-0">
-        <div class="row justify-content-center">
-            <div class="col justify-content-center text-center">
-                <h3>The Nation’s Oldest Newspaper.</h3>
-                <h1 class="fw-bold">A svelte, one-ounce packet<br>of unfettered, non-fiction news.</h1>
-                <p>Published 26 times a year on alternating Fridays.<br>
-                    Distributed for free by people just like you.<br>
-                    Help us cover the first district, the second and beyond. </p>
-                <button><a href="#">Learn More</a></button>
-            </div>
-        </div>
-
-    </div>
-
-    <hr class="hr-end mt-0">
-
-</header>
-
-<main>
-    <section class="articles">
-
-        <div class="container p-5 mx-auto gy-4">
-            <div class="row my-4">
-                <div class="col text-center">
-                    <h2>Read the Latest Paper Online<br>–=≈=–</h2>
+                <div class="col-md-6 col-lg-4">
+                    <h2>Departments</h2>
+                    <ul>
+                        <li><a href="#">The Fortnightly Rant</a></li>
+                        <li><a href="#">The Alleged News®</a></li>
+                        <li><a href="#">Mash Notes, Hate Mail & Other Correspondence</a></li>
+                        <li><a href="#">The Northcountry Chronicle</a></li>
+                        <li><a href="#">Page 8</a></li>
+                        <li><a href="#">Digital Issues (PDFs)</a></li>
+                    </ul>
                 </div>
-            </div>
-
-            <div class="row mb-4 gy-4">
-                <div class="col-lg-8">
-                    <article>
-                        <h1><a href="#">Justice Deferred? Or Defunct?</a></h1>
-                        <img class="mx-auto d-block img-fluid" src="assets/img/Waiting-for-Garland-655x465.jpg"
-                             alt="Justice Deferred? Or Defunct article image">
-                        <p>
-                            Watching Vladimir and Estragon on a nearly bare stage as they wait for Godot can,
-                            paradoxically,
-                            be a thrilling experience. Waiting for Merrick Garland to slap the cuffs on The Former
-                            Guy,
-                            on
-                            the other hand, is beginning to get tedious. Talk about pent-up demand. If Ticketmaster
-                            could
-                            sell seats to a DJT Perp Walk, its ensuing collapse would make last year’s Taylor Swift
-                            fiasco
-                            look like business as usual. And yet, we wait…and wait…. What—a seething nation might
-                            ask,
-                            boiling over in exasperation, had…
-
-                        </p>
-                        <button><a href="#">Read More</a></button>
-                    </article>
+                <div class="col-md-6 col-lg-4">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="#">Locals</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Papers</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Veterans</a></li>
+                        <li><a href="#">Veterans’ Organizations</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 mx-auto">
-                    <article>
-                        <h1><a href="#">A Brief Dispatch Regarding the Impending Coronation</a></h1>
-                        <img class="img-fluid mx-auto d-block" src="assets/img/Black-History-275x202.jpg"
-                             alt="A Brief Dispatch Regarding the Impending Coronation article image">
-                        <p>
-                            The U.S. and the U.K., said George Bernard Shaw, are two nations separated by a common
-                            language.
-                            Further distinguishing us from our former colonial master is our form of
-                            government—though
-                            GOP
-                            opposition to monarchy seems increasingly squishy. Our editorial position on monarchy
-                            was
-                            most
-                            recently published on February 10th, with a selection from Thomas Paine’s, Common Sense;
-                            herewith, a more succinct version: Britain’s first king was “nothing better than the
-                            principal
-                            ruffian of some restless…
-                        </p>
-                        <button><a href="#">Read More</a></button>
-                    </article>
+
+                <div class="col-md-6 col-lg-4">
+                    <h2>Mailing Information</h2>
+                    <p>The New Hampshire Gazette<br>
+                        PO Box 756<br>
+                        Portsmouth, NH 03802</p>
                 </div>
-            </div>
-
-            <div class="row gy-4">
-                <div class="col-md mx-auto">
-                    <article>
-                        <h1><a href="#">Snowflake Culture</a></h1>
-                        <p>by W.D. Ehrhart I have been writing poetry ever since I was 15 years old. My first
-                            published
-                            work
-                            appeared in 1971 when I was 22 years old. Since then, I’ve published over 400 poems.
-                            Along
-                            the
-                            way, I’ve probably received as many as 4,000…</p>
-                        <button><a href="#">Read More</a></button>
-                    </article>
-                </div>
-                <div class="col-md mx-auto">
-                    <article>
-                        <h1><a href="#">Merrimack Station: A Fifty Year N.H. Disaster Continues</a></h1>
-                        <p>Lby Roy Morrison Merrimack Station, the coal fired power plant on the banks of the
-                            Merrimack
-                            River in Bow, New Hampshire, has recently passed its fiftieth anniversary. It’s New
-                            England’s
-                            last remaining coal plant. It’s also N.H.’s largest point source of carbon pollution.
-                            The
-                            plant…
-                        </p>
-                        <button><a href="#">Read More</a></button>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="latest-paper">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center my-3">
-                    <h2>Download the Latest Paper<br>–=≈=–</h2>
-                </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col">
-                    <h1 class="text-center"><a href="#">Volume 267, No. 14; March 24, 2023</a></h1>
-                    <p class="text-center">March 24, 2023 — To download this issue of our paper, just click on the
-                        image.</p>
-                    <a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/267_14.png"
-                                     alt="article image of volume 267"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="promo-video">
-
-        <div class="container-fluid info-section text-center">
-            <h1>Politics on paper since October 7, 1756</h1>
-            <p>A newspaper, a third cousin five times removed,
-                a freelance insurgency. <a href="#">Watch the video</a></p>
-        </div>
-    </section>
-
-    <section class="political-cartoons">
-
-        <div class="container text-center my-5">
-            <h3 class="mb-3">Political Cartoons.</h3>
-            <h1 class="mb-3">Mike Dater's Corner</h1>
-            <p class="mb-3">The New Hampshire Gazette’s resident starving artist. Over 20 years of political satire,
-                some
-                whimsical and some occasionally irreverent.</p>
-            <button class="mb-3"><a href="#">Visit the Gallery</a></button>
-            <img class="img-fluid mx-auto d-block" src="assets/img/mike-dater-frankenmitch.jpg"
-                 alt="mike art political cartoon">
-        </div>
-    </section>
-
-    <section class="guide-articles">
-        <div id="main-quote" class="container-fluid text-center p-5">
-            <div class="container">
-                <div class="row text-center">
-                    <p>“Thanks again, as always, for making the now really bad news somewhat easier to tolerate. The
-                        truth,
-                        which is now seldom spoken, and never spoken by our nation’s “Liar in Chief,” just keeps
-                        getting
-                        worse and worse. I am thankful for our still (for now, anyway) free press and late night
-                        television
-                        comedians’ rants posted on Youtube about the state of our country.”</p>
-                    <p class="mb-0">— E.S., Dover, N.H.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mt-5 mb-3">
-            <div class="row text-center">
-                <h2 class="mb-3">Admiral Fowle’s Piscataqua River Tidal Guide (Not for Navigational Purposes)</h2>
-                <p id="info-guide">Portsmouth, arguably the first town in this country not founded by religious
-                    extremists, is
-                    bounded
-                    on the north and east by the Piscataqua River, the second, third, or fourth fastest-flowing
-                    navigable river in the country… <a href="#">Read More</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="container mt-4">
-            <div id="article-carousel" class="carousel slide" data-bs-interval="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row gy-5">
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 1</h1>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, omnis.
-                                        Repellat,
-                                        saepe quas repellendus ullam quam accusamus illo perferendis beatae porro
-                                        quibusdam,
-                                        delectus nisi, unde iure minus et eius iusto.</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 2</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis obcaecati ut
-                                        ipsa cum
-                                        praesentium provident, dolores tempore nihil, enim iure nam pariatur, autem
-                                        officia
-                                        itaque. Voluptatem perspiciatis corporis laboriosam necessitatibus?</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 3</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga amet nostrum,
-                                        tempore
-                                        reiciendis assumenda ullam, porro iure fugit cupiditate deserunt nihil
-                                        molestias
-                                        repellendus labore pariatur? Sit deserunt blanditiis et? Exercitationem.</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row gy-5">
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 4</h1>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus dolor iusto
-                                        fugit
-                                        dolores. Sit perferendis numquam, atque praesentium autem quidem nesciunt
-                                        eveniet
-                                        ullam quos, alias iusto quaerat et, voluptas ad?</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 5</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci
-                                        minima cum
-                                        praesentium obcaecati ullam. Voluptatem, eius. Tempora fuga, praesentium
-                                        aperiam
-                                        optio iure ipsum sunt rem iste ducimus, sint quo.</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 6</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere
-                                        distinctio,
-                                        perspiciatis ipsa dicta vel a eaque cumque pariatur deleniti molestias
-                                        possimus,
-                                        consequuntur laboriosam obcaecati quam facilis nesciunt. Fuga, numquam!</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row gy-5">
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 7</h1>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi qui
-                                        perspiciatis,
-                                        explicabo non iusto nesciunt dolorum necessitatibus cumque illum praesentium
-                                        repellat soluta aut id. Quod deserunt explicabo quasi nostrum accusamus.</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 8</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo sint
-                                        mollitia
-                                        amet blanditiis exercitationem aut ipsa reprehenderit nulla ratione, laborum
-                                        culpa
-                                        quidem. Harum nobis minus officiis consequuntur voluptate a!</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                            <div class="col-lg-4">
-                                <article>
-                                    <h1>Article 9</h1>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
-                                        voluptas sequi
-                                        vitae praesentium, eius, repudiandae, odio vel doloremque perspiciatis fugit
-                                        facilis. Dolor at ex doloremque cumque architecto sunt error pariatur.</p>
-                                    <button><a href="#">Read More</a></button>
-                                </article>
-                            </div>
-                        </div>
+                <div class="col-md-6 col-lg-4">
+                    <h2>People Powered Press</h2>
+                    <p>A contribution of any size helps our efforts and our future.</p>
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/btn_donateCC_LG.gif" alt="PayPal - The safer, easier way to pay online!">
                     </div>
                 </div>
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#article-carousel" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#article-carousel" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#article-carousel" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-</main>
-
-<div class="container-fluid widget-footer mb-0"></div>
-<footer class="footer">
-
-
-    <div class="container align-content-center justify-content-center">
-        <div class="row justify-content-start gy-3">
-            <div class="col-md-6 col-lg-4">
-                <h2>Contributors</h2>
-                <ul>
-                    <li><a href="#">Mike Dater</a></li>
-                    <li><a href="#">W.D. Ehrhart</a></li>
-                    <li><a href="#">Jim Hightower</a></li>
-                    <li><a href="#">Jean Stimmell</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>Departments</h2>
-                <ul>
-                    <li><a href="#">The Fortnightly Rant</a></li>
-                    <li><a href="#">The Alleged News®</a></li>
-                    <li><a href="#">Mash Notes, Hate Mail & Other Correspondence</a></li>
-                    <li><a href="#">The Northcountry Chronicle</a></li>
-                    <li><a href="#">Page 8</a></li>
-                    <li><a href="#">Digital Issues (PDFs)</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="#">Locals</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Papers</a></li>
-                    <li><a href="#">Politics</a></li>
-                    <li><a href="#">Veterans</a></li>
-                    <li><a href="#">Veterans’ Organizations</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <h2>Mailing Information</h2>
-                <p>The New Hampshire Gazette<br>
-                    PO Box 756<br>
-                    Portsmouth, NH 03802</p>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>People Powered Press</h2>
-                <p>A contribution of any size helps our efforts and our future.</p>
-                <div class="d-flex justify-content-center">
-                    <img src="assets/img/btn_donateCC_LG.gif" alt="PayPal - The safer, easier way to pay online!">
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>Search the archives</h2>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Search"
-                           aria-describedby="addon-wrapping">
+                <div class="col-md-6 col-lg-4">
+                    <h2>Search the archives</h2>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Search"
+                            aria-describedby="addon-wrapping">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid copyright mt-5">
-        <div class="row text-center py-3">
-            <p class="m-0">©1756-2023 The New Hampshire Gazette - The Nation’s Oldest Newspaper™<br>
-                Published 26 times a year on alternating Fridays </p>
+        <div class="container-fluid copyright mt-5">
+            <div class="row text-center py-3">
+                <p class="m-0">©1756-2023 The New Hampshire Gazette - The Nation’s Oldest Newspaper™<br>
+                    Published 26 times a year on alternating Fridays </p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <button onclick="scrollTopY()" id="scroll-to-top-btn">^</button>
 
 </body>
 

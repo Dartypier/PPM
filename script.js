@@ -30,3 +30,20 @@ function openSearch() {
 }
 
 //scroll-to-top
+window.addEventListener('scroll', function () {
+    var scrollPosition = window.scrollY;
+    var scrollToTopBtn = document.getElementById('scroll-to-top-btn');
+
+    if (scrollPosition > 300) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+
+function scrollTopY() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
