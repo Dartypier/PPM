@@ -1,7 +1,7 @@
 //splash screen per session
 $(document).ready(function () {
     if (!localStorage.getItem('splash')) {
-        var splashHtml = '<div class="container-fluid" id="splash"><div class="row text-center"><p>The New Hampshire Gazette</p></div></div>';
+        let splashHtml = '<div class="container-fluid" id="splash"><div class="row text-center"><p>The New Hampshire Gazette</p></div></div>';
         $('body').append(splashHtml);
 
         setTimeout(function () {
@@ -31,8 +31,8 @@ function openSearch() {
 
 //scroll-to-top
 window.addEventListener('scroll', function () {
-    var scrollPosition = window.scrollY;
-    var scrollToTopBtn = document.getElementById('scroll-to-top-btn');
+    let scrollPosition = window.scrollY;
+    let scrollToTopBtn = document.getElementById('scroll-to-top-btn');
 
     if (scrollPosition > 300) {
         scrollToTopBtn.style.display = 'block';
