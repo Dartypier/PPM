@@ -17,45 +17,56 @@
     font-family: "Playfair Display", serif;
 }
 
-.main-navigation .slideout-toggle a:before,
-.slide-opened .slideout-overlay .slideout-exit:before {
-    font-family: GeneratePress;
-}
-
-nav .navbar-dark {
-    color: white !important;
-}
-
-.nav-first {
-    color: #222 !important;
-}
-
-.nav-first ul li a {
-    padding: 20 20px;
+.menu-button-first{
     font-size: 15px;
+    color:#222;
 }
 
-.nav-second {
-    color: #fff !important;
-}
-
-.nav-second ul li a {
-    padding: 20 20px;
+.menu-button-second{
     font-size: 13px;
+    color:#fff;
 }
 
-.nav-first .nav-link:hover {
+#navbar-toggler-first{
+    border: 0;
+    outline: 0;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+#navbar-toggler-second{
+    border: 0;
+    outline: 0;
+    background-color: #222;
+    box-shadow: none;
+}
+
+.nav-first .nav-link{
+    color:#222;
+    font-size: 15px;
+    padding: 20px 20px !important;
+}
+
+.nav-first .nav-link:hover{
     background-color: #3f3f3f;
     color: white;
 }
 
+.nav-second .nav-link{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 18px !important;
+    line-height: 45px;
+}
+
 .nav-second .nav-link:hover {
-    background-color: #303030;
-    color: #3f3f3f;
+    background-color: #3f3f3f;
+    color: #fff;
 }
 
 .dropdown-menu-dark {
-    background-color: #303030;
+    background-color: #3f3f3f;
     border-radius: 0;
 }
 
@@ -168,7 +179,7 @@ footer {
     background-color: #515151;
     color: #fff;
     border-color: #ccc;
-    height: 60px;
+    height: 62.5px;
     outline: 0;
     border: 0;
     opacity: 0.9;
@@ -178,7 +189,7 @@ footer {
 }
 
 .close-button {
-    height: 60px;
+    height: 62.5px;
     width: 60px;
     background-color: #3f3f3f;
     ;
@@ -212,3 +223,4 @@ a:focus {
 .info-section a {
     color: #fff;
 }
+

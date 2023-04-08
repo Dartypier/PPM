@@ -1,7 +1,7 @@
 //splash screen per session
 $(document).ready(function () {
     if (!localStorage.getItem('splash')) {
-        var splashHtml = '<div id="splash"><p>The New Hampshire Gazette</p></div>';
+        var splashHtml = '<div class="container-fluid" id="splash"><div class="row text-center"><p>The New Hampshire Gazette</p></div></div>';
         $('body').append(splashHtml);
 
         setTimeout(function () {
