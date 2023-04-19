@@ -94,23 +94,6 @@ header #hero h1 {
     font-size: 30px;
 }
 
-/*button a {*/
-/*    all: unset !important;*/
-/*}*/
-
-/*button {*/
-/*    border: 2px solid #222;*/
-/*    padding: 8px 15px;*/
-/*    font-size: 18px;*/
-/*    background-color: unset;*/
-/*}*/
-
-/*button:hover {*/
-/*    background-color: #222;*/
-/*    color: #fff;*/
-/*    transition: 0.2s;*/
-/*}*/
-
 a.btn-link{
     color: unset;
     text-decoration: unset;
@@ -314,6 +297,10 @@ a:focus {
     border: none;
     box-shadow: 0 0 3px #474747;
     padding: 0;
+}
+
+#scroll-to-top-btn::before {
+    content: "^";
 }
 
 .articles img{
